@@ -1,9 +1,19 @@
 import axios from 'axios';
 
 // PART 1: Show Dog Photo
-
-function showDogPhoto(evt) {
   // TODO: get a random photo from the Dog API and show it in the #dog-image div
+
+// function showDogPhoto(evt) {
+// axios.get('https://dog.ceo/api/breeds/image/random').then(res => {
+//   const imgUrl = res.data.message;
+// document.querySelector("#dog-image").innerHTML = `<img src=${imgUrl}>`;
+// })
+// }
+
+async function showDogPhoto(evt) {
+  const response = await axios.get("https://dog.ceo/api/breeds/image/random");
+  let imgUrl = response.data.message;
+  document.querySelector("#dog-image").innerHTML = `<img src = ${imgUrl}>`;
 }
 
 document.querySelector('#get-dog-image').addEventListener('click', showDogPhoto);
