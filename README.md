@@ -1,7 +1,7 @@
 # wb-ajax
 Practice making AJAX requests with Axios.
 
-#Type in the following zip codes to get different responses:
+#Type in the following zip codes to get different responses: </br>
  90210 - Very warm. Good for sunbathing with movie stars.', 'temp': '90F'
  97202 - Rainy, damp, and rich with hipsters.', 'temp': '60F'
  20004 - Full of hot air.', 'temp': '95F'
